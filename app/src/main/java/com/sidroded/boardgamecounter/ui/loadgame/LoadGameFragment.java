@@ -1,4 +1,4 @@
-package com.sidroded.boardgamecounter.ui.gallery;
+package com.sidroded.boardgamecounter.ui.loadgame;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,20 +10,20 @@ import android.support.v4.app.Fragment;
 import android.arch.lifecycle.ViewModelProvider;
 import com.sidroded.boardgamecounter.databinding.FragmentGalleryBinding;
 
-public class GalleryFragment extends Fragment {
+public class LoadGameFragment extends Fragment {
 
     private FragmentGalleryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(GalleryViewModel.class);
+        LoadGameViewModel loadGameViewModel =
+                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(LoadGameViewModel.class);
 
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        loadGameViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

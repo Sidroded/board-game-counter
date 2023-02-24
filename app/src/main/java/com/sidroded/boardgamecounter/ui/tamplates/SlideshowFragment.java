@@ -1,4 +1,4 @@
-package com.sidroded.boardgamecounter.ui.slideshow;
+package com.sidroded.boardgamecounter.ui.tamplates;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

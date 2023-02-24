@@ -1,4 +1,4 @@
-package com.sidroded.boardgamecounter.ui.slideshow;
+package com.sidroded.boardgamecounter.ui.tamplates;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;

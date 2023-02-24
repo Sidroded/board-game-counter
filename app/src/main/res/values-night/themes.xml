@@ -2,9 +2,19 @@
     <!-- Base application theme. -->
     <style name="Theme.BoardGameCounter" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorPrimary">@color/title_bar</item>
+        <item name="colorPrimaryDark">@color/upper_line</item>
+        <item name="colorAccent">@color/accent</item>
         <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.BoardGameCounter.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.BoardGameCounter.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.BoardGameCounter.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="ThemeOverlay.BoardGameCounter.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
     </style>
 </resources>

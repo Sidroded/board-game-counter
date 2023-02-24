@@ -16,5 +16,10 @@
                 android:id="@+id/nav_slideshow"
                 android:icon="@drawable/ic_menu_templates"
                 android:title="@string/menu_templates"/>
+        <item
+                android:id="@+id/nav_create_templates"
+                android:title="@string/menu_create_template"
+                android:icon="@drawable/ic_menu_create_template"
+        />
     </group>
 </menu>

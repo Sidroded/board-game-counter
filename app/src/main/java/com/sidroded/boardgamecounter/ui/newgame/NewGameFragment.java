@@ -1,4 +1,4 @@
-package com.sidroded.boardgamecounter.ui.home;
+package com.sidroded.boardgamecounter.ui.newgame;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,20 +10,20 @@ import android.support.v4.app.Fragment;
 import android.arch.lifecycle.ViewModelProvider;
 import com.sidroded.boardgamecounter.databinding.FragmentHomeBinding;
 
-public class HomeFragment extends Fragment {
+public class NewGameFragment extends Fragment {
 
     private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(HomeViewModel.class);
+        NewGameViewModel newGameViewModel =
+                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(NewGameViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        newGameViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

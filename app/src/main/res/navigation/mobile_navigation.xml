@@ -7,19 +7,27 @@
 
     <fragment
             android:id="@+id/nav_home"
-            android:name="com.sidroded.boardgamecounter.ui.home.HomeFragment"
+            android:name="com.sidroded.boardgamecounter.ui.newgame.NewGameFragment"
             android:label="@string/menu_new_game"
             tools:layout="@layout/fragment_home"/>
 
     <fragment
             android:id="@+id/nav_gallery"
-            android:name="com.sidroded.boardgamecounter.ui.gallery.GalleryFragment"
+            android:name="com.sidroded.boardgamecounter.ui.loadgame.LoadGameFragment"
             android:label="@string/menu_load_game"
             tools:layout="@layout/fragment_gallery"/>
 
     <fragment
             android:id="@+id/nav_slideshow"
-            android:name="com.sidroded.boardgamecounter.ui.slideshow.SlideshowFragment"
+            android:name="com.sidroded.boardgamecounter.ui.tamplates.SlideshowFragment"
             android:label="@string/menu_templates"
             tools:layout="@layout/fragment_slideshow"/>
+
+    <fragment
+            android:id="@+id/nav_create_templates"
+            android:label="@string/menu_create_template"
+            android:name="com.sidroded.boardgamecounter.ui.createtemplate.CreateTemplateFragment"
+            tools:layout="@layout/fragment_create_template"
+
+        />
 </navigation>
